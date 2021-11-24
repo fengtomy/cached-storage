@@ -23,4 +23,4 @@ cachedStorage.clearSync()
 
 ## limitation
 
-Currently it only support uni, and I'll try my best to support other platforms.
+Currently it only supports uni, and I'll try my best to support other platforms.
