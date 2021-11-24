@@ -56,25 +56,33 @@ function interceptHandlers(context) {
   }
 
   Object.defineProperty(context, 'getSync', {
-    get: getSync,
+    get: function() {
+      return getSync
+    },
     set: noop,
     enumerable: false,
     configurable: false,
   })
   Object.defineProperty(context, 'setSync', {
-    get: setSync,
+    get: function() {
+      return setSync
+    },
     set: noop,
     enumerable: false,
     configurable: false,
   })
   Object.defineProperty(context, 'clearSync', {
-    get: clearSync,
+    get: function() {
+      return clearSync
+    },
     set: noop,
     enumerable: false,
     configurable: false,
   })
   Object.defineProperty(context, 'removeSync', {
-    get: removeSync,
+    get: function() {
+      return removeSync
+    },
     set: noop,
     enumerable: false,
     configurable: false,
