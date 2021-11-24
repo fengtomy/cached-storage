@@ -14,5 +14,6 @@
     "low-consumption"
   ],
   "author": "fengxh",
+  "repository": "https://github.com/fengtomy/cached-storage",
   "license": "ISC"
 }
