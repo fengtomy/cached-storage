@@ -14,6 +14,11 @@ function setHandlers(env, context, config) {
     defaultSetSync = context.setStorageSync || noop
     defaultRemoveSync = context.removeStorageSync || noop
     defaultClearSync = context.clearStorageSync || noop
+  } else if (env === 'window') {
+    defaultGetSync = context.localStorage.getItem || noop
+    defaultSetSync = context.localStorage.setItem || noop
+    defaultRemoveSync = context.removeItem || noop
+    defaultClearSync = context.clear || noop
   }
   cachedStorage.getSyncWrapper = config.getSync || defaultGetSync
   cachedStorage.setSyncWrapper = config.setSync || defaultSetSync
